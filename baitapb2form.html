@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baitapb2form.css">
+
+    <title>Trần Việt</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    
+    <form action="" method="POST">
+        <div class="radio_form">
+            <input type="radio" name="Dangky" checked>
+            <label>
+                Đăng ký bản thân
+            </label>
+            &nbsp;
+            <input type="radio" name="Dangky">
+            <label>
+                Đăng ký cho người thân
+            </label>
+        </div>
+        <div class="injection" style="width: 23.6%; margin-bottom: 10px;">
+            <label>Đăng ký mũi tiêm thứ <span>(*)</span></label>
+            <input list="inject" name="distict"  placeholder="Mũi tiêm thứ" >
+                <datalist id="inject">
+                    <option >1</option>
+                    <option >2</option>
+                </datalist>
+            <p>đăng ký mũi tiêm không được bổ sung</p>
+        </div>
+       
+        <div class="span_form">
+            <label>1.Thông tin người đăng ký xem</label>
+        </div>
+        <div class="infor_form">
+            <div>
+                <label>Họ Và Tên <span>(*)</span></label>
+                <input type="text" placeholder="Họ Và Tên">
+                <p>Họ và tên không được bỏ trống</p>
+            </div>
+            <div>
+                <label>Ngày sinh <span>(*)</span></label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Giới Tính <span>(*)</span></label>
+                <input list="gender"   placeholder="Giới Tính" >
+                <datalist id="gender">
+                    <option >Nam</option>
+                    <option >Nữ</option>
+                </datalist>
+            </div>
+            <div>
+                <label>Số điện thoại <span>(*)</span></label>
+                <input type="tel" name="phone" placeholder="số điện thoại" pattern="[0-9]{10}"
+                    title="vui lòng nhập sô điện thoại ">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div>
+                <label> Số CCCD/CMND/HC</label>
+                <input type="text" placeholder="Số CMND/CCCD/HC">
+            </div>
+            <div>
+                <label>Số thẻ BHYT</label>
+                <input type="text" placeholder="Số thẻ BHYT">
+            </div>
+            <div>
+                <label>Nghề Nghiệp</label>
+                <input type="text" placeholder="Nghề nghiệp">
+            </div>
+            <div>
+                <label>Đơn vị công tác </label>
+                <input type="text" placeholder="Đơn vị công tác">
+            </div>
+            <div style="grid-column: 2 / span 3;">
+                <label>Địa chỉ hiện tại</label>
+                <input type="text" placeholder="Địa chỉ hiện tại">
+            </div>
+            <div>
+                <label>Tỉnh/Thành Phố<span>(*)</span></label>
+                <input list="citys" name="city" id="city" placeholder="Tỉnh/Thành Phố">
+                <datalist id="citys">
+                    <option>Thái Bình</option>
+                    <option>.......</option>
+                </datalist>
+                <p>Vui lòng chọn Tỉnh/Thành Phố</p>
+            </div>
+            <div>
+                <label>Quận/Hyện <span>(*)</span></label>
+                <input list="districts" name="distict" placeholder="Quận/Huyện" disabled>
+                <datalist id="districts">
+                    <option>Thái Bình</option>
+                    <option>Hà Nội</option>
+                    <option>Vinh</option>
+                </datalist>
+            </div>
+            <div style="grid-column: 3 / span 2;">
+                <label>Xã/Phường <span>(*)</span></label>
+                <input list="wards" name="ward" placeholder="Xã/Phường" disabled>
+                <datalist id="wards">
+                    <option>Thái Bình</option>
+                    <option>Hà Nội</option>
+                    <option>Vinh</option>
+                </datalist>
+            </div>
+            <div>
+                <label>Dân tộc</label>
+                <select>
+                    <option>Kinh</option>
+                    <option>....</option>
+                </select>
+            </div>
+            <div>
+                <label>Quốc Tịch</label>
+                <select>
+                    <option>Việt Nam</option>
+                    <option>........</option>
+                </select>
+            </div>
+            <div style="grid-column: 3 / span 2;">
+                <label>Nhóm ưu tiên <span>(*)</span></label>
+                <select>
+                    <option>16.các đối tượng khác theo quyết định của bộ trưởng bộ y tế......</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+        </div>
+        <div class="span_form">
+            <label>2.Thông tin đăng ký tiêm chủng</label>
+        </div>
+        <div class="extra_info">
+            <div class="day_ex">
+                <label>Ngày muốn được time (dự kiến)</label>
+                <input type="date" id="ipdate_day" style="width: 304px;">
+            </div>
+            <div class="selec_ex" id="sel_day" style="width: 24%;">
+                <label>Buổi tiêm mong muốn</label>
+                <select>
+                    <option>buổi tiêm mong muốn</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="atten">
+            <h4>Chú ý</h4>
+            <ul>
+                <li>Việc đăng ký thông tin hoàn toàn được bảo mật và phục vụ cho chiến dịch tiêm chủng Vác xin COVID -
+                    19</li>
+                <li>Xin vui lòng kiểm tra kỹ các thông tin bắt buộc (VD: họ và tên ,ngày tháng năm,số điện thoại.....)
+                </li>
+                <li>Bằng việc nhấn nút "Xác nhận" , bạn hoàn thành hiểu và động ý chịu trach nhiệm với các thông tin đã
+                    cung cấp</li>
+                <li>Cá Nhân /Tổ Chức đăng ký thành công trên hệ thống sẽ được đưa vào danh sách đặt tiệm . Cơ sở y tế
+                    thông tin báo lịch tiêm khi có vác xin và kế hoạch tiêm được phê duyệt .Trân Trọng cảm ơn !</li>
+            </ul>
+        </div>
+        <div class="button">
+            <div>
+                <button type="button" class="cancel">Hủy Bỏ</button>
+                <button type="submit" class="next">Tiếp Tục ></button>
+
+            </div>
+
+        </div>
+        <div class="facebook">
+            <img src="./facebook-app-symbol.svg" alt="" id="iconfb" >
+
+        </div>
+    </form>
+</body>
+
+</html>

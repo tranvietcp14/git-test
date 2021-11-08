@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    margin: 10px 10px 0px 10px;
+}
+input[list],
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"] {
+    height: 33px;
+}
+
+
+
+select,
+input[type="date"]{ 
+    color: rgb(118, 118, 118);
+
+}
+
+input {
+    padding: 5px;
+  
+}
+
+.next {
+    background-color:rgb(109, 122, 201);
+    color: aliceblue;
+    margin-left: 10px;
+
+}
+.cancel{
+    border: 1px solid red;
+    color: red;
+    
+}
+.cancel,.next{
+    width: 15%;
+    height: 40px;
+    border-radius: 7px 7px 7px 0px;
+    transition: 0.5s;
+}
+ .cancel:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.next:hover{
+    background-color:rgb(155, 161, 199);
+    
+}
+input,
+select , button {
+    border: 0.1px solid rgb(118, 118, 118);
+    border-radius: 3px;
+
+}
+
+select {
+    height: 45px;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+.radio_form,
+.button {
+    display: block;
+    padding-left: 38%;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.button>div {
+    margin-left: 50px;
+}
+
+.radio_form>label,
+.span_form {
+    font-weight: 900;
+}
+
+.infor_form ,.extra_info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    margin: 9px 0px 9px 0px;
+
+}
+
+.extra_info,
+.atten,
+h5 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.infor_form>div,
+.extra_info>div,
+.injection {
+    display: flex;
+    flex-direction: column;
+}
+ul,
+li,
+span,
+h4,
+p {
+    color: red;
+}
+
+p {
+    font-size: 12px;
+}
+.facebook{
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    background-color: #475993;
+    position: fixed;
+    top: 65%;
+    right: 1%;
+    animation: fbicon  1.2s linear infinite ;
+    animation-direction: alternate;
+  
+}
+#iconfb{
+    top: 25%;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;;
+    position: absolute;
+}
+@keyframes fbicon {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+        background-color: yellow;
+    }
+    100%{
+        transform: scale(1.25);
+        
+    }
+    
+}
+@media only screen and (max-width: 800px){
+    .row{
+        display: block;
+    }
+    .form-group{
+        display: block;
+        margin-bottom: 30px;
+    }
+}
