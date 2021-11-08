@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập buổi 2</title>
+    <style>
+       
+        span {
+            color: red;
+        }
+
+        tr,
+        td,
+        th {
+            padding:0px 10px 10px 10px;
+            border-collapse: collapse;   
+            
+        }
+        table{
+            border: 1px solid black;
+            margin: 10px 0px 0px 17%;
+            width: 1000px;
+            
+        }
+        input{
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+
+        <table>
+            <tr>
+                <td style="padding: 10px;"> Đăng ký Mũi Tiêm Thứ <span>(*)</span></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Đăng ký mũi tiêm thứ"></td>
+            </tr>
+            <tr>
+                <th style="text-align: left;" >1.Thông tin đăng ký tiêm</th>
+            </tr>
+            <br>
+            <tr>
+                <td>Họ Và Tên <span>(*)</span></td>
+                <td>Ngày Sinh <span>(*)</span></td>
+                <td>Giới Tính<span>(*)</span></td>
+                <td>Số điện thoại <span>(*)</span></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Họ Và tên"></td>
+                <td><input type="date"></td>
+                <td>
+                    <select style="width: 200px;height: 33px;" >
+                        <option value="gender">Giới Tính</option>
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="Số Điện Thoại"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Số CMND/CCCD/HC <span>(*)</span></td>
+                <td>Số Thẻ Bảo Hiểm Y Tế</td>
+                <td>Nghề Nghiệp</td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Email"></td>
+                <td><input type="text" placeholder="Số CMND/CCCD/HC"></td>
+                <td><input type="text" placeholder="Số Thẻ BHYT"></td>
+                <td><input type="text" placeholder="Nghề Nghiệp"> </td>
+            </tr>
+            
+        </table>
+        <table style="background-color: azure;padding: 10px;">
+            <tr>
+                <th>Tên</th>
+                <th>CMT</th>
+                <th>Ngày Đăng ký</th>
+                <th>IMG</th>
+                <th>Video</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Việt</td>
+                <td rowspan="2">1234556789</td>
+                <td rowspan="2">11/22/3333</td>
+                <td rowspan="2">
+                    <img src="/img/tải xuống.jpg">
+                </td>
+                <td>
+                    <video width="300" height="190" controls>
+                        <source src="/video/Ed Sheeran - Shape of You (Official Music Video).mp4">
+                    </video>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 <iframe width="300" height="190" src="https://tuoitre.vn/" ></iframe>
+                 
+                </td>
+            </tr>
+            
+        </table>
+    </form>
+</body>
+
+</html>
