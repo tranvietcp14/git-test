@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Việt</title>
+</head>
+
+    
+<style>
+    /*  */
+    form,tr,td,th{
+        border: 1px solid;
+        margin: 10% 35% 0 35%;
+        background-color: #eaeaea;
+        
+    }
+    input[type="button"]:hover{
+        background-color: darkgray;
+        border: none;
+        transition: 0.3s;
+    }
+    input[type="button"]:active{
+        background-color:rgb(158, 154, 154);
+        border: none;
+    }
+    /*  */
+    /*  */
+    input[type="text"]{
+        width: 98.6%;
+        height: 4rem;
+        font-size: 3rem;
+        text-align: right;
+        border: none;
+        background-color: white;
+    }
+    /*  */
+    /*  */
+    .menu>input{
+        background-color: #eaeaea;
+        border: none;
+        width:16.6666%;
+        margin: 1px;
+    }
+    /*  */
+    /*  */
+    .key{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .key>input{
+        margin: 1px;
+        height: 3em;
+        border: none;
+        background-color: white;
+    }
+   /*  */
+</style>
+
+<body>
+   <form action=""style="width: 300px;">
+       <div class="f_result">
+           <input type="text" value=" " id="result" disabled>
+       </div>
+       <div class="menu">
+            <input type="button" value="MC" disabled>
+            <input type="button" value="MR" disabled>
+            <input type="button" value="M+">
+            <input type="button" value="M-">
+            <input type="button" value="Ms ">
+       </div>
+       <div class="key">
+            <input type="button" value="7" onclick="key(7)" >
+            <input type="button" value="8" onclick="key(8)" >
+            <input type="button" value="9"onclick="key(9)">
+            <input type="button" value="*"onclick="caculation('x')">
+            <input type="button" value="4"onclick="key(4)">
+            <input type="button" value="5"onclick="key(5)">
+            <input type="button" value="6"onclick="key(6)">
+            <input type="button" value="/"onclick="caculation(/)">
+            <input type="button" value="1"onclick="key(1)">
+            <input type="button" value="2"onclick="key(2)">
+            <input type="button" value="3"onclick="key(3)">
+            <input type="button" value="+"onclick="caculation(+)">
+            <input type="button" value="AC"onclick="clear('ac')">
+            <input type="button" value="0"onclick="key(0)">
+            <input type="button" value="="onclick="caculation(=)">
+            <input type="button" value="-"onclick="caculation(-)"> 
+       </div>
+       <script>
+           var num1 = document.getElementsByClassName('key');
+           function key(num){
+               document.getElementById('result').value  +=num;
+           }
+           switch (num1) {
+               case 'x':
+                   alert('xin chào');
+                   break;
+           
+               default:
+                   break;
+           }
+       </script>
+   </form>
+</body>
+
+</html>
