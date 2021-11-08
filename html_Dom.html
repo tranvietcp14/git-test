@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <ul id="p">
+   </ul>     
+    </p>  
+    <button onclick="appear()">Hiện</button>
+    <button onclick="remove()">xóa</button>
+    
+    <script>
+        function appear(){
+            var appear = document.createElement("LI");
+            var textnode = document.createTextNode("hiện");
+            appear.appendChild(textnode);
+            document.getElementById("p").appendChild(appear);
+            appear.style.listStyle = "none";
+        }
+        function remove(){
+         var rm = document.getElementById("p");
+         rm.removeChild(rm.childNodes[0]);
+        }
+       
+    </script>
+</body>
+</html>
